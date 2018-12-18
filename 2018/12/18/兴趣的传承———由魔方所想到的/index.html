@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="随笔,家庭教育,魔方,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="尼克拉斯布鲁的个人小站" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="兴趣的传承———由魔方所想到的 我从2011年就开始玩魔方了，那会儿觉得这东西很有趣，既开发智力又能消磨时间，闲暇时玩两下很有趣。学会了最基本的玩法以后，我发现自己的手太笨，没办法提高速度，自己又不愿意背那些CFOP（一种快速魔方解法）多达119种公式，所以渐渐又放弃了。 学魔方最近我那些尘封7年的魔方被我大女儿给翻出来了，她在一边玩的津津有味，我的兴趣也被勾起来了。秉着要在女儿面前炫耀一下的心思">
+<meta name="keywords" content="随笔,家庭教育,魔方">
+<meta property="og:type" content="article">
+<meta property="og:title" content="有意思的概率">
+<meta property="og:url" content="https://niclas.blue/2018/12/18/兴趣的传承———由魔方所想到的/index.html">
+<meta property="og:site_name" content="尼克拉斯布鲁的个人小站">
+<meta property="og:description" content="兴趣的传承———由魔方所想到的 我从2011年就开始玩魔方了，那会儿觉得这东西很有趣，既开发智力又能消磨时间，闲暇时玩两下很有趣。学会了最基本的玩法以后，我发现自己的手太笨，没办法提高速度，自己又不愿意背那些CFOP（一种快速魔方解法）多达119种公式，所以渐渐又放弃了。 学魔方最近我那些尘封7年的魔方被我大女儿给翻出来了，她在一边玩的津津有味，我的兴趣也被勾起来了。秉着要在女儿面前炫耀一下的心思">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-12-18T14:04:54.368Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="有意思的概率">
+<meta name="twitter:description" content="兴趣的传承———由魔方所想到的 我从2011年就开始玩魔方了，那会儿觉得这东西很有趣，既开发智力又能消磨时间，闲暇时玩两下很有趣。学会了最基本的玩法以后，我发现自己的手太笨，没办法提高速度，自己又不愿意背那些CFOP（一种快速魔方解法）多达119种公式，所以渐渐又放弃了。 学魔方最近我那些尘封7年的魔方被我大女儿给翻出来了，她在一边玩的津津有味，我的兴趣也被勾起来了。秉着要在女儿面前炫耀一下的心思">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://niclas.blue/2018/12/18/兴趣的传承———由魔方所想到的/">
+
+
+
+
+
+  <title>有意思的概率 | 尼克拉斯布鲁的个人小站</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">尼克拉斯布鲁的个人小站</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://niclas.blue/2018/12/18/兴趣的传承———由魔方所想到的/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Niclas blue">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="尼克拉斯布鲁的个人小站">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">有意思的概率</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-18T21:54:25+08:00">
+                2018-12-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="兴趣的传承———由魔方所想到的"><a href="#兴趣的传承———由魔方所想到的" class="headerlink" title="兴趣的传承———由魔方所想到的"></a>兴趣的传承———由魔方所想到的</h1><hr>
+<p>我从2011年就开始玩魔方了，那会儿觉得这东西很有趣，既开发智力又能消磨时间，闲暇时玩两下很有趣。学会了最基本的玩法以后，我发现自己的手太笨，没办法提高速度，自己又不愿意背那些CFOP（一种快速魔方解法）多达119种公式，所以渐渐又放弃了。</p>
+<h1 id="学魔方"><a href="#学魔方" class="headerlink" title="学魔方"></a>学魔方</h1><p>最近我那些尘封7年的魔方被我大女儿给翻出来了，她在一边玩的津津有味，我的兴趣也被勾起来了。秉着要在女儿面前炫耀一下的心思，想要教我女儿怎么去解，却尴尬的发现：原来所记的公式全忘了。没办法，又得从头学起，不过这次我可以和女儿一起学。虽然我知道她面对这么难记的公式可能会知难而退，但如果我能让她在小小年纪中的短暂记忆里留下这段回忆，或许未来她自己还会拿起来认真去学吧。</p>
+<h1 id="学二胡"><a href="#学二胡" class="headerlink" title="学二胡"></a>学二胡</h1><p>由此，我想起了一段往事。小时候，我十分喜欢音乐，也向母亲表达了想学乐器的意愿。母亲很高兴，很快就给我买了一把二胡和学习的教程，并且兴冲冲的要我马上开始学。可我对二胡完全没有兴趣，或许是因为当时一直在听理查德克莱德曼的《水边的阿琳娜》原因，我一直想学的是钢琴。但母亲不理解，她认为二胡和钢琴一样都是乐器，学啥都一样。而且学二胡是她从小的梦想，而我刚好可以圆她这个梦。我当时就郁闷了，学的结果也可想而知。</p>
+<p>现在回想起来，其实母亲的二胡没买错，但她错就错在强迫我来学，其实应该是她自己去学才对。如果我在她学习的过程中也对二胡感兴趣了额，那我们就可以一起学了。</p>
+<h1 id="学游泳"><a href="#学游泳" class="headerlink" title="学游泳"></a>学游泳</h1><p>我本人很喜欢游泳，没事经常去游泳馆游两圈。在我刚去那会儿，我大女儿也经常缠着我一起去，可她又不会游，所以我就给她报名学游泳了。一开始，她是兴高采烈的，可等到后来她学会了一点以后，就因为每天训练太累而不想去了。这时，我就告诉她：“不想练很正常，大家都会经历这个阶段，因为学游泳就是会很辛苦、很累。但当你挺过这个阶段，真正学会了，你就会喜欢上它的。”所以，每次我都会鼓励她：“再坚持一会儿，再多游一圈。”慢慢的，她游得越来越好了，来游泳馆比我还要积极，已经不需要我再催促了。</p>
+<h1 id="培养兴趣"><a href="#培养兴趣" class="headerlink" title="培养兴趣"></a>培养兴趣</h1><p>从这几件事里面，就可以看出：<strong>我们要给孩子培养的是兴趣，而不是把自己的兴趣强加给小孩。</strong>如果我女儿不是天天缠着我要游泳，我也不会这么早就让她去学（她今年4岁）。但兴趣培养出来以后还不够，要让孩子学会坚持，不要过早放弃。因为在每一个学习的过程中，都会有瓶颈期，都会有难以坚持的时刻。你要学会陪伴孩子度过这一时刻，过去了，学习就会变成一个自发的过程，不需要你去督促了。</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>前两天，我有了再去学钢琴的念头，便带着我女儿去琴行参观了一圈。她兴致勃勃的看着那一排排漂亮的钢琴和雪白的琴键，急不可耐想要上去弹一下。我说：“要不要我们一起去学钢琴？” </p>
+<p>“好啊！那我们一起学吧！”她点点头，大声的回答。眼神中泛出了和20年前的我一样的光芒。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/随笔/" rel="tag"># 随笔</a>
+          
+            <a href="/tags/家庭教育/" rel="tag"># 家庭教育</a>
+          
+            <a href="/tags/魔方/" rel="tag"># 魔方</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/18/反击的号角/" rel="next" title="反击的号角">
+                <i class="fa fa-chevron-left"></i> 反击的号角
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/18/初上手BitMEX的感受/" rel="prev" title="初上手BitMEX的感受">
+                初上手BitMEX的感受 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Niclas blue</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">29</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">35</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#兴趣的传承———由魔方所想到的"><span class="nav-number">1.</span> <span class="nav-text">兴趣的传承———由魔方所想到的</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#学魔方"><span class="nav-number">2.</span> <span class="nav-text">学魔方</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#学二胡"><span class="nav-number">3.</span> <span class="nav-text">学二胡</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#学游泳"><span class="nav-number">4.</span> <span class="nav-text">学游泳</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#培养兴趣"><span class="nav-number">5.</span> <span class="nav-text">培养兴趣</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结语"><span class="nav-number">6.</span> <span class="nav-text">结语</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Niclas blue</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+s?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
