@@ -330,6 +330,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/12/18/有意思的概率/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/18/有意思的概率/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -396,8 +406,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/18/兴趣的传承———由魔方所想到的/" rel="next" title="兴趣的传承———由魔方所想到的">
-                <i class="fa fa-chevron-left"></i> 兴趣的传承———由魔方所想到的
+              <a href="/2018/12/16/未来的人会是怎样/" rel="next" title="未来的人会是怎样？">
+                <i class="fa fa-chevron-left"></i> 未来的人会是怎样？
               </a>
             
           </div>
@@ -406,8 +416,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/12/18/读斯蒂芬金的《写作这回事》/" rel="prev" title="读斯蒂芬金的《写作这回事》">
-                读斯蒂芬金的《写作这回事》 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/12/18/兴趣的传承———由魔方所想到的/" rel="prev" title="兴趣的传承———由魔方所想到的">
+                兴趣的传承———由魔方所想到的 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -437,6 +447,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -710,6 +723,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'bOcCGaYlGyvuOP0acXin6dfq-gzGzoHsz',
+        appKey: 'a5SAfsFEspTulzegNVuhUgal',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
