@@ -261,6 +261,169 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://niclas.blue/2018/08/07/在EOS上开发个DAPP到底有多难/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Niclas blue">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="尼克拉斯布鲁的个人小站">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/07/在EOS上开发个DAPP到底有多难/" itemprop="url">在EOS上开发个DAPP到底有多难？</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-07T23:43:00+08:00">
+                2018-08-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/区块链/" itemprop="url" rel="index">
+                    <span itemprop="name">区块链</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/07/在EOS上开发个DAPP到底有多难/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/07/在EOS上开发个DAPP到底有多难/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近的金融市场真的是哀鸿遍野, 大A股跌破2700点, 币圈更是跌跌不休,普遍距离1月份的最高点跌去70%左右. 熊市当中, 我们需要继续充值信仰:) 目前号称区块链3.0的EOS, 成了目前币圈最能折腾的项目:6月15日主网上线以来,RAM刚刚爆炒一轮,从高点0.9跌到0.15,套死无数小散. 现在BM又提出把计算资源打包为REX, 购买REX可以得到SEOS, 按照BM的说法:</p>
+<blockquote>
+<p>“REX账目中的每个EOS都可以产生一个抵押EOS代币(SEOS). SEOS和EOS被存放在Bancor Relay的两个连接中,最开始的时候,EOS和SEOS对应的数量比是1:1, 买卖者可以支付一小笔交易费(如0.5%)来买卖SEOS.”</p>
+</blockquote>
+<p>可能你和我一样,对这些规则是一脸懵逼. 结合之前炒作TPS和RAM的前科,我们很怀疑这是不是BM对EOS的新一轮炒作行为. 当然,BM的出发点是好的,就是为了降低开发者的开发成本. 那么我们就算一下,现在开发一个DAPP到底要多少成本?</p>
+<p>一是知识成本. EOS.IO是用C++开发的,同样,基于EOS的DAPP也需要用C++来开发. 我想就这一点,就已经挡住不少人的热情了,毕竟,C++号称是最难掌握的编程语言.(反正我是不打算去学,主要是没这个时间)</p>
+<p>二是资金成本. EOS不是号称转账免费吗? 确实是,EOS转账确实免费,而且速度非常快. 但是, 新建一个EOS账号是要钱的! 一开始,新建一个账号最少要消耗1.5EOS.如果按照EOS50元一枚的价格算,建立一个账号最少要花80元左右.而且,新建EOS账号的成本是随着RAM成本的升高而升高的, 在RAM价格高达0.9左右的时候,新建一个账号要花200块钱!</p>
+<p>这还仅仅是开一个账号,做开发,还要购买大量的RAM和CPU来保证合约的正常运行. 以发行一个自有代币举例: 发代币,你的账号起码要有200KB的内存,目前内存价格是0.178EOS/KB,也就是说,你要花至少36个EOS才能开始下一步操作.(我刚刚买了200KB内存用来发币,发了两千一百万枚NBT,谁想要留下账户给我,我转给你一些拿去玩)</p>
+<p>光买内存还不行,还得要足够的CPU和带宽资源,虽然现在CPU不需要购买,只需要抵押. 但随着BM宣称的REX的到来,未来所有的资源都可以拿来炒作了. 现在CPU的抵押价格已经暴涨50倍了!</p>
+<p>不过,从好的方面来看, BM的种种做法提高了EOS整个生态的活力,同时让投机者和开发者各取所需,确实是一大创新.希望REX的出现能够实实在在的降低开发者的成本.</p>
+<p>从开发难度来看,目前,EOS的开发者依然十分活跃. 已经有开发者做出了基于EOS的开发工具,例如FIBOS,可以用JavaScript来进行DAPP开发(需要了解的同学加我微信).</p>
+<p>EOS的未来还是充满光明的,当前要紧的是,抓紧时间学开发!</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://niclas.blue/2018/08/06/区块链研讨会上的发言提纲/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -778,7 +941,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">43</span>
+                  <span class="site-state-item-count">44</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
